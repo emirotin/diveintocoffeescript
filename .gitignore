@@ -1,0 +1,5 @@
+.project
+.settings
+tmp
+source/sandbox
+build/doctrees
