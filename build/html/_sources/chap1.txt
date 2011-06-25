@@ -63,7 +63,10 @@ Having `npm` you can install CoffeeScript as simple as
 
     npm install -g coffee-script
 
-You may need root priveledges, or running it as
+Here `-g` means 'install globally', which is what I prefer. You can install a local copy (somewhere under you home directory) 
+by omitting this switch.
+
+You may need root priveledges, like running it as
 ::
 
     sudo npm install -g coffee-script

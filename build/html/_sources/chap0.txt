@@ -66,7 +66,7 @@ HTML mixes tags into text content, outlining its structure and allowing styling.
 If you don't know HTML, follow this tutorial: http://www.w3schools.com/html/default.asp, specifically these chapters:
 
     * `Introduction <http://www.w3schools.com/html/html_intro.asp>`_, 
-      `Get Started <html_getstarted.asp>`_
+      `Get Started <http://www.w3schools.com/html/html_getstarted.asp>`_,
     * `Basics <http://www.w3schools.com/html/html_primary.asp>`_, 
       `Elements <http://www.w3schools.com/html/html_elements.asp>`_,
       `Attributes <http://www.w3schools.com/html/html_attributes.asp>`_,
