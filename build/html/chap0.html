@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>0. Introduction and Assumptions &mdash; diveintocoffeescript v0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="diveintocoffeescript v0.1.0 documentation" href="index.html" />
+    <link rel="next" title="1. Installing Node.js and CoffeeScript" href="chap1.html" />
+    <link rel="prev" title="Dive into CoffeeScript" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>diveintocoffeescript v0.1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>0. Introduction and Assumptions</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Dive into CoffeeScript</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="chap1.html">1. Installing Node.js and CoffeeScript</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="introduction-and-assumptions">
+<h1>0. Introduction and Assumptions<a class="headerlink" href="#introduction-and-assumptions" title="Permalink to this headline">¶</a></h1>
+<p>The book follows the great concept of &#8216;diving into&#8217; introduced by
+Mark Pilgrim in his excellent <a class="reference external" href="http://diveintopython.org/">Dive Into Python</a>.
+This means that normally chapters start with the complete working code example,
+which is then explained and discussed.</p>
+<p>The book rewrites the majority of Mark&#8217;s sample programs in
+<a class="reference external" href="http://jashkenas.github.com/coffee-script/">CoffeeScript</a> language
+using the growing <a class="reference external" href="http://nodejs.org/">Node.js</a> infrastructure.</p>
+<p>Though it slowly starts with the very basic ideas, you have to have some background
+in order to understand what&#8217;s going on.</p>
+<div class="topic">
+<p class="topic-title first">A note on operating system</p>
+<p>The majority of things covered in the book <em>should</em> work on Windows.
+Though nobody guarantees it.</p>
+<p>I&#8217;m working on Mac OSX, a member of *nix family,
+and thus almost everything will work on Linux in exactly the same way as here.</p>
+<p>Shell sessions are shown in bash.</p>
+<p>For Windows users, where I expect differences or problems, I provide links to external resources.</p>
+</div>
+<div class="section" id="resources-and-pointers">
+<h2>Resources and Pointers<a class="headerlink" href="#resources-and-pointers" title="Permalink to this headline">¶</a></h2>
+<p>Here are some facts and titles. If you feel uncomfortable with some of them,
+follow the links and read through the articles and definitions.</p>
+<p>Before you move to the next chapter, become sure that you think I&#8217;m an idiot telling you obvious things.</p>
+<div class="section" id="internet-etc">
+<h3>Internet, etc.<a class="headerlink" href="#internet-etc" title="Permalink to this headline">¶</a></h3>
+<p>Hope, you are fine with this. <a class="reference external" href="http://en.wikipedia.org/wiki/Internet">Internet</a>
+is a distributed system consisting of thousands of web-servers.</p>
+<p>Everything in the Internet basically follows the client-server oriented architecture, which means that some
+nodes (systems, computers) - servers - produce <em>content</em>, and others - clients - request and consume it.</p>
+<p><a class="reference external" href="http://en.wikipedia.org/wiki/WWW">WWW</a> (World Wide Web) works over Internet to deliver
+<a class="reference external" href="http://en.wikipedia.org/wiki/Hypertext">hypertext</a> documents.</p>
+<p>In case of WWW servers are <a class="reference external" href="http://en.wikipedia.org/wiki/Web_server">Web servers</a>,
+clients are (normally) the <a class="reference external" href="http://en.wikipedia.org/wiki/Web_browser">browser programs</a>,
+and content is transfered (mostly) over the <a class="reference external" href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> protocol.</p>
+<p>Hypertext initially meant to be a text with inter-links (like between encyclopedia articles).</p>
+</div>
+<div class="section" id="html">
+<h3>HTML<a class="headerlink" href="#html" title="Permalink to this headline">¶</a></h3>
+<p>Hypertext format used by WWW is HTML.</p>
+<p><a class="reference external" href="http://en.wikipedia.org/wiki/HTML">HTML</a> (HyperText Markup Language) is a set of rules for
+specially marking text files to be interpreted by browsers as hypertext documents.</p>
+<p>HTML mixes tags into text content, outlining its structure and allowing styling.</p>
+<p>If you don&#8217;t know HTML, follow this tutorial: <a class="reference external" href="http://www.w3schools.com/html/default.asp">http://www.w3schools.com/html/default.asp</a>, specifically these chapters:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://www.w3schools.com/html/html_intro.asp">Introduction</a>,
+<a class="reference external" href="html_getstarted.asp">Get Started</a></li>
+<li><a class="reference external" href="http://www.w3schools.com/html/html_primary.asp">Basics</a>,
+<a class="reference external" href="http://www.w3schools.com/html/html_elements.asp">Elements</a>,
+<a class="reference external" href="http://www.w3schools.com/html/html_attributes.asp">Attributes</a>,</li>
+<li><a class="reference external" href="http://www.w3schools.com/html/html_headings.asp">Headings</a>,
+<a class="reference external" href="http://www.w3schools.com/html/html_paragraphs.asp">Paragraphs</a>,
+<a class="reference external" href="http://www.w3schools.com/html/html_formatting.asp">Formatting</a>,
+<a class="reference external" href="http://www.w3schools.com/html/html_links.asp">Links</a>,
+<cite>Images &lt;http://www.w3schools.com/html/html_images.asp&gt;</cite>,
+<a class="reference external" href="http://www.w3schools.com/html/html_lists.asp">Lists</a></li>
+<li><a class="reference external" href="http://www.w3schools.com/html/html_layout.asp">HTML Layout</a>,
+<a class="reference external" href="http://www.w3schools.com/html/html_doctype.asp">Doctypes</a> (<em>this section has some historycal meaning</em>),
+<a class="reference external" href="http://www.w3schools.com/html/html_head.asp">Head</a>,</li>
+<li><a class="reference external" href="http://www.w3schools.com/html/html_examples.asp">Summary</a>.</li>
+</ul>
+</div></blockquote>
+<p>HTML is not mandatory for early parts of the book, but I think understanding Web, HTTP and HTML is mandatory
+before you start learning advanced topics like Node.js and CoffeeScript
+(even though these advanced topics start with examples that are much simpler than HTML itself).</p>
+<p>The most recent / modern HTML standard version is HTML5.
+This tutorial gives an overview of the changes done since HTML4: <a class="reference external" href="http://www.w3schools.com/html5/default.asp">http://www.w3schools.com/html5/default.asp</a>.</p>
+<p>There is also a book by Mark Pilgrim (sic!) titled <a class="reference external" href="http://diveintohtml5.org/">&#8216;Dive Into HTML5&#8217;</a> (sic!),
+full of detailed explanations and historical flashbacks giving reasoning and background for this evolving standard.</p>
+<p>It&#8217;s not mandatory to know HTML5 (its mostly straightforward for the reader familiar with HTML4), but if you
+want to be in Web development, you will have to learn it anyway very soon.</p>
+</div>
+<div class="section" id="css">
+<h3>CSS<a class="headerlink" href="#css" title="Permalink to this headline">¶</a></h3>
+<p>As HTML grew out of simple hypertext documents to full-featured <strong>web pages</strong>,
+a need for non-obtrusive separated styling arouse.</p>
+<p>This was solved with CSS.
+CSS, standing for Cascade Style Sheets (very confusing title, actually)
+allows setting specific visual and layout properties for HTML elements.</p>
+<p>Follow this tutorial to understand its basics: <a class="reference external" href="http://www.w3schools.com/css/default.asp">http://www.w3schools.com/css/default.asp</a>.</p>
+<p>You don&#8217;t need deep understanding of CSS to read through this book, but basics are recommended.</p>
+<p>Understanding <a class="reference external" href="http://www.w3schools.com/css/css_reference.asp">CSS selectors</a> is also the must for working with jQuery library.</p>
+</div>
+<div class="section" id="javascript">
+<h3>JavaScript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
+<p>Once developers understanded they want some <em>dynamics</em> in their pages, a <a class="reference external" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>
+language appeared (read here for short historical insight: <a class="reference external" href="http://en.wikipedia.org/wiki/JavaScript#History">http://en.wikipedia.org/wiki/JavaScript#History</a>).</p>
+<p>What you should know about JavaScript:</p>
+<blockquote>
+<div><ul class="simple">
+<li>it has <strong>nothing</strong> to do with Java. At all.
+Read <a class="reference external" href="http://javascript.crockford.com/javascript.html">here</a> for some highlights,</li>
+<li>it was specially designed to work in the browser,</li>
+<li>the biggest strength of JavaScript (at the moment of appearance) was that it could interact with DOM - Document Object Model.
+DOM is the way the HTML document structure (as stored and manipulated by the browser) is exposed to the JavaScript code,</li>
+<li>JavaScript basics: <a class="reference external" href="http://javascript.crockford.com/survey.html">http://javascript.crockford.com/survey.html</a>,</li>
+<li>JavaScript tutorial: <a class="reference external" href="http://www.w3schools.com/js/default.asp">http://www.w3schools.com/js/default.asp</a>,</li>
+<li>(a quite short) JavaScript code style guide: <a class="reference external" href="http://javascript.crockford.com/style1.html">part one</a>,
+<a class="reference external" href="http://javascript.crockford.com/style2.html">part two</a>,</li>
+<li>a more detailed style guide: <a class="reference external" href="http://javascript.crockford.com/code.html">http://javascript.crockford.com/code.html</a>,</li>
+<li>JavaScript is actually the world&#8217;s most popular programming language: <a class="reference external" href="http://javascript.crockford.com/popular.html">http://javascript.crockford.com/popular.html</a>.</li>
+</ul>
+</div></blockquote>
+<p>Make sure you understand JavaScript, its purposes and main coding blocks before we move on.</p>
+</div>
+<div class="section" id="id3">
+<h3>Node.js<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>As you should already know, JavaScript was the language created for Web <em>client-side</em> programming -
+manipulating retrieved content as opposed to generating the content on the server.</p>
+<p>That means every dynamic non-trivial web site had to be written in at least 4 languages:
+HTML for document structure and markup,
+CSS for document styling and layout,
+server-side language like PHP to put dynamic data (like those retieved from the database) into the page,
+and JavaScript to add client-side dynamics, for example, perform in-place data validations.</p>
+<p>Since that time several attempts to move JavaScript out of the browser were done,
+including <a class="reference external" href="http://en.wikipedia.org/wiki/Rhino_(JavaScript_engine)">Rhino</a>,
+a Java implementation allowing JS execution from the command line. It didn&#8217;t get big success,
+I suppose mostly because of performance issues.</p>
+<p>In 2009 a project called <a class="reference external" href="http://www.commonjs.org/">CommonJS</a>
+was started aimed at specifying some standards for wider JS usage, from GUI apps to web servers.</p>
+<p>Then, Google released its browser, <a class="reference external" href="http://chrome.google.com/">Google Chrome</a>,
+shipped with the new JS engine - <a class="reference external" href="http://en.wikipedia.org/wiki/V8_(JavaScript_engine)">V8</a>.</p>
+<p>Based on V8, a <a class="reference external" href="http://nodejs.org/">Node.js</a> was created - a wrapping project,
+using V8 as JS engine, and implementing CommonJS library.</p>
+<dl class="docutils">
+<dt>So, Node.js:</dt>
+<dd><ul class="first last simple">
+<li>is a JavaScript imeplementation not tied to the browser,</li>
+<li>uses the V8 JS engine, considered to be really fast and well performing,</li>
+<li>implements a set of useful common libraries, such as filesystem access, HTTP client (agent) ans server,
+cryptographic primitives (through OpenSSL bindings), etc.</li>
+<li>allows command-line JS execution. It is often said that Node.js is a server-side Javascript.
+Well, yes, but it doesn&#8217;t mean it can only be used for writing HTTP servers -
+it rather means it is executed as a normal program, not inside a browser,</li>
+<li>implements <a class="reference external" href="http://nodejs.org/docs/v0.4.8/api/stdio.html">Console API</a>
+used by many browser JS debuggers (like Firebug or Chrome developer tools),</li>
+<li>is asyncronous <a class="reference external" href="http://en.wikipedia.org/wiki/Event-driven_architecture">event-driven</a> system,
+which means it heavily uses callback idiom for almost every operation that may require significant time for completion,</li>
+<li>got lots of <a class="reference external" href="https://github.com/joyent/node/wiki/modules">modules</a> written,
+providing impressive set of functionality for writing web servers and service of any kind.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="id4">
+<h3>CoffeeScript<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://jashkenas.github.com/coffee-script/">CoffeeScript</a> (<em>you don&#8217;t have to read through its documentation right now</em>)
+is a rethinking of JS <em>syntax</em>. Technically its a <em>grammar</em> (a set of rules for writing coffee files),
+and a <em>program</em> translating the coffee files into js files.</p>
+<p>So, everything you can do with JS can be done with CoffeeScript, and vice versa -
+every CoffeeScript construct is just a synonim for a JS function, method or common idiom.</p>
+<p>Why another language? Well, CoffeeScript is much more beautiful and laconic.
+It also incorporates some best practices, like global closures, <cite>===</cite> and <cite>!==</cite> usage, etc.</p>
+<p>The code written in CoffeeScript is normally shorter,
+more readable and maintainable, and usually better than the same code manually written in JS.</p>
+<p>CoffeeScript is based on Node.js, which means that you need Node.js to transform CoffeeScript code to JavaScript.
+Alternatively there exist a way to directly use CoffeeScript in your web pages, though it is not recommended for
+production usage.</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Summary<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>HTML documents are requested by web browsers from the web servers over the Internet HTTP protocol.</p>
+<p>CSS and JS can be shipped together with them, and are interpreted by web browsers to add styling and dynamical behavior to the web pages.</p>
+<p>JS jumped out of the browser box and can now be used as a stand-alone or server-side language thanks to Node.js.</p>
+<p>Node.js uses fast V8 JS engine, implements common library,
+is based on asynchronous operations and events paradigms,
+and has lots of useful extra modules.</p>
+<p>CoffeeScript changes JS syntax, and is based on Node.js.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Dive into CoffeeScript</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="chap1.html">1. Installing Node.js and CoffeeScript</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Eugene Mirotin.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

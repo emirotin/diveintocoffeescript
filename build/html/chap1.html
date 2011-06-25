@@ -1,0 +1,137 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. Installing Node.js and CoffeeScript &mdash; diveintocoffeescript v0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="diveintocoffeescript v0.1.0 documentation" href="index.html" />
+    <link rel="prev" title="0. Introduction and Assumptions" href="chap0.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>diveintocoffeescript v0.1.0 documentation</span></a></h1>
+        <h2 class="heading"><span>1. Installing Node.js and CoffeeScript</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="chap0.html">0. Introduction and Assumptions</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="installing-node-js-and-coffeescript">
+<h1>1. Installing Node.js and CoffeeScript<a class="headerlink" href="#installing-node-js-and-coffeescript" title="Permalink to this headline">¶</a></h1>
+<p>First of all, make sure you have your favorite text editor, and you terminal ready.</p>
+<div class="section" id="node-js">
+<h2>Node.js<a class="headerlink" href="#node-js" title="Permalink to this headline">¶</a></h2>
+<p>Node.js can be installed on any platform - easier on *nix, harder on Windows.</p>
+<p>See short <a class="reference external" href="https://github.com/joyent/node/wiki/Installation">official instructions</a>,
+and <a class="reference external" href="http://howtonode.org/how-to-install-nodejs">more detailed from howtonode.org</a>.</p>
+<p>On Mac OSX with MacPorts you can also do</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo port install nodejs
+</pre></div>
+</div>
+<p>Now let&#8217;s test it:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>node --version
+v0.4.8
+</pre></div>
+</div>
+<p>In your case version number may differ, as Node is constantly developed and updated.</p>
+<p>Let&#8217;s create a test file hello.js:</p>
+<div class="highlight-javascript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hellow, World!&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>and run it:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>node hello.js
+Hello, World!
+</pre></div>
+</div>
+<p>This was actually our first Node.js program. Let&#8217;s explain it:</p>
+<p>1) console.log is a function that outputs given text to the terminal from which the Node program was started,</p>
+<p>1&#8217;) in JS lines of text (strings) are marked with the single (&#8216;) or double (&#8221;) quotes.</p>
+</div>
+<div class="section" id="npm">
+<h2>NPM<a class="headerlink" href="#npm" title="Permalink to this headline">¶</a></h2>
+<p>NPM stands for Node Package Manager, and is the interface to the centralized storage of Node.js modules.</p>
+<p>If you have <cite>curl</cite>, you can</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>curl http://npmjs.org/install.sh | sh
+</pre></div>
+</div>
+<p>Read <a class="reference external" href="https://github.com/isaacs/npm#readme">here</a> if you encounter any problems.</p>
+</div>
+<div class="section" id="coffeescript">
+<h2>CoffeeScript<a class="headerlink" href="#coffeescript" title="Permalink to this headline">¶</a></h2>
+<p>Having <cite>npm</cite> you can install CoffeeScript as simple as</p>
+<div class="highlight-bash"><div class="highlight"><pre>npm install -g coffee-script
+</pre></div>
+</div>
+<p>You may need root priveledges, or running it as</p>
+<div class="highlight-bash"><div class="highlight"><pre>sudo npm install -g coffee-script
+</pre></div>
+</div>
+<p>Now, let&#8217;s test it:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>coffee --version
+CoffeeScript version 1.1.1
+</pre></div>
+</div>
+<p>Finally, let rewrite our <cite>hello.js</cite> in CoffeeScript:</p>
+<div class="highlight-coffeescript"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="s1">&#39;Hellow, World!&#39;</span>
+</pre></div>
+</td></tr></table></div>
+<p>and run it:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>coffee hello.coffee
+Hello, World!
+</pre></div>
+</div>
+<p>This was our first CoffeeScript program. Let&#8217;s see what changed, and what didn&#8217;t:</p>
+<p>0) Changed: we are now executing it with <cite>coffee</cite> instead of <cite>node</cite>,</p>
+<p>1) Same: we use the same console.log function, because CoffeeScript only changes language <em>syntax</em>,</p>
+<p>1&#8217;) Same: in CoffeeScript strings are also marked with the single (&#8216;) or double (&#8221;) quotes,</p>
+<p>1&#8217;&#8216;) Changed: in CoffeeScript parenthesis are optional for function calls.
+Sometimes it makes the calls much more beautiful and readable (not in this case, though).</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="chap0.html">0. Introduction and Assumptions</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2011, Eugene Mirotin.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
