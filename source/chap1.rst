@@ -12,9 +12,11 @@ Node.js
 Node.js can be installed on any platform - easier on \*nix, harder on Windows.
 
 See short `official instructions <https://github.com/joyent/node/wiki/Installation>`_, 
-and `more detailed from howtonode.org <http://howtonode.org/how-to-install-nodejs>`_.
+`more detailed from howtonode.org <http://howtonode.org/how-to-install-nodejs>`_,
+and `special section on Windows <https://github.com/joyent/node/wiki/Building-node.js-on-Cygwin-(Windows)>`_
+from the official wiki.
 
-On Mac OSX with MacPorts you can also do
+On Mac OSX with MacPorts you can do
 ::
 
     sudo port install nodejs
